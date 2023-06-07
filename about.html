@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>Samsung Desarrolladoras 2022/23 - Acerca de</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="js/index.js" defer></script>
+        <script src="https://kit.fontawesome.com/b37653d681.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+
+    <body>
+
+        <!-- MENU -->
+        <nav>
+            <div class="left-items">
+                <a class="item" href="index.html"><img class='logo' src="images/bejob-logo.png" alt="Logo de Bejob"></a>
+            </div>
+            <div class="right-items">
+                <a class="item" href="registration.html">REGISTRO</a>
+                <a class="item" href="search.php">CONSULTA</a>
+                <a class="item selected" href="about.html">ACERCA DE</a>
+            </div>
+            <a class="toggle" href="#" onclick="toggle();"><i class="fas fa-bars fa-2x"></i></a>
+        </nav>
+
+        <!-- EXERCISE DESCRIPTION -->
+        <div id="description">
+            <h1>LABORATORIO DEL CURSO FULL-STACK</h1>
+            <p>Crearemos un formulario de alta a una página web, una base de datos con una tabla y los campos necesarios para guardar la información y un script PHP que valide los datos, los guarde en dicha tabla y permita su consulta. Se requiere crear los scripts html, css, sql y PHP listados a continuación:</p>
+            
+            <h2>En el front-end:</h2>
+            <p>Crearemos un formulario con los siguientes campos:</p>
+                <ul>
+                    <li>Nombre</li>
+                    <li>Primer apellido</li>
+                    <li>Segundo apellido</li>
+                    <li>Email</li>
+                    <li>Login</li>
+                    <li>Password</li>
+                </ul>
+            <p>En este ejercicio se debe implementar una doble validación, tanto desde html como desde PHP. Se comprobará que todos los campos estén correctamente llenos antes de enviar los datos a una base de datos MySQL.</p>
+            <p>El campo email deberá tener el formato de correo electrónico válido.</p>
+            <p>El campo password deberá tener una extensión entre 4-8 caracteres.</p>
+            <p>Si los datos están correctamente introducidos, al darle a enviar se creará un registro en nuestra BBDD con los datos introducidos. De lo contrario se avisará al usuario con un mensaje claro sobre el problema y se volverá a ejecutar de nuevo el formulario de registro.</p>
+                
+            <h2>En la BBDD:</h2>
+            <p>Se deberá crear una BBDD con la tabla y los campos necesarios para guardar la información recibida.</p>
+            <p>Una vez que hemos creado la base de datos, podemos comenzar a trabajar en el script PHP que se encargará de validar el formulario y realizar las operaciones de consulta en la base de datos.</p>
+            
+            <h2>En el back-end:</h2>
+            <p>Se deberán crear el script PHP necesario para validar los datos recibidos desde front-end.</p>
+            <p>Si el mail del usuario introducido ya estaba en nuestra BBDD se avisará al usuario con un mensaje claro sobre el problema y se volverá a ejecutar de nuevo el formulario de registro.</p>
+            <p>Si los datos son correctos y el usuario introducido no está ya dado de alta, aparecerá un mensaje que nos muestre la frase “Registro completado con éxito”, los datos se guardarán en la tabla de nuestra BBDD y aparecerá un botón “consulta” que, al pulsarlo, nos dará una lista de los usuarios registrados en nuestra BBDD.</p>
+            <p>En resumen, el ejercicio de programación en PHP consiste en crear una página que permita el registro de datos en un formulario HTML, validar los datos ingresados, almacenarlos en una base de datos MySQL y permitir la consulta de los registros.</p>
+        </div>
+    </body>
+
+</html>
